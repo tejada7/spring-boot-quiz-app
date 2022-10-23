@@ -20,7 +20,7 @@
 		
 		<form action="submit" method="POST" th:object=${qForm}>
 			<div class="ques-box bg-dark text-light" th:each="ques, i: ${qForm.questions}">
-				<p class="title" th:text="${ques.title}"></p>
+				<p class="title" style="color: white" th:text="${ques.title}"></p>
 				
 				<div class="option">
 					<input type="radio" th:name="|questions[${i.index}].chose|" th:value="1" />
